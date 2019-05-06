@@ -18,27 +18,76 @@ const example = {
 }
 
 // Write your intern objects here:
+function Intern(i_id, i_email, i_name, i_gender) { 
+  this.id = i_id;
+  this.name = i_name;
+  this.email = i_email;
+  this.gender = i_gender;
+  this.speak = function() {
+    console.log("Hello my name is " + this.name + "!");
+  }
+}
 
+var mitzi = new Intern('1', 'mmelloy0@psu.edu', 'Mitzi', 'F');
+var kennan = new Intern('2', 'kdiben1@tinypic.com', 'Kennan','M');
+var keven = new Intern('3', 'kmummery2@wikimedia.org', 'Keven','M');
+var gannie = new Intern('4', 'gmartinson3@illinois.edu', 'Gannie', 'M');
+var antonietta = new Intern('5', 'adaine5@samsung.com', 'Antonietta', 'F');
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+  console.log(mitzi.name)
 
 // Kennan's ID
+  console.log(kennan.id)
 
 // Keven's email
+  console.log(keven.email)
 
 // Gannie's name
-
+  console.log(gannie.name)
+  
 // Antonietta's Gender
+  console.log(antonietta.gender)
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+  function Intern(i_id, i_email, i_name, i_gender) { 
+    this.id = i_id;
+    this.name = i_name;
+    this.email = i_email;
+    this.gender = i_gender;
+    this.speak = function() {
+      console.log("Hello my name is " + this.name + "!");
+    }
+  }
+
+  var kennan = new Intern('2', 'kdiben1@tinypic.com', 'Kennan','M');
+  console.log(kennan.speak());
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+  function Intern(i_id, i_email, i_name, i_gender) { 
+    this.id = i_id;
+    this.name = i_name;
+    this.email = i_email;
+    this.gender = i_gender;
+    this.speak = function() {
+      console.log("Hello my name is " + this.name + "!");
+    }
+    this.multiplyNums = function(a,b) {
+      return a*b;
+    }
+  }
+  
+  var antonietta = new Intern('5', 'adaine5@samsung.com', 'Antonietta', 'F');
+  console.log(antonietta.multiplyNums(3,4));
+
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
